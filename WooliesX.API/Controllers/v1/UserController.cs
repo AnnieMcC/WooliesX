@@ -10,7 +10,7 @@ using System.Linq;
 
 namespace WooliesX.API.Controllers.v1
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class UserController : Controller
     {

@@ -23,10 +23,13 @@ namespace WooliesX.Data.Services
 
         public async Task<IEnumerable<UserResource>> GetUsers()
         {
-            var users = _context.User
-                .ProjectTo<UserResource>(_mappingConfiguration);
+            return new List<UserResource>{
+                new UserResource { Name = "Anne McCloghry", Token = "71038a5e-4454-486a-85fb-0003a361ee7f" }
+            };
+            //var users = _context.User
+            //    .ProjectTo<UserResource>(_mappingConfiguration);
 
-            return await users.ToListAsync<UserResource>();
+            //return await users.ToListAsync<UserResource>();
         }
 
         public async Task<UserResource> GetUserById(int id)

@@ -11,15 +11,19 @@ namespace WooliesX.API.Controllers.v1
         {
             var response = new
             {
-                href = Url.Link(nameof(GetRoot), null)
-                , users = new
+                href = Url.Link(nameof(GetRoot), null),
+                users = new
                 {
                     href = Url.Link(nameof(UserController.GetAllUsers), null)
+                },
+                products = new
+                {
+                    href = Url.Link(nameof(ProductController.GetAllProducts), null)
+                },
+                shoppingHistory = new
+                {
+                    href = Url.Link(nameof(ShopperHistoryController.GetAllShopperHistory), null)
                 }
-                //, products = new 
-                //{
-                //    href = Url.Link(nameof(ProductController.GetProducts), null)
-                //}
             };
 
             return Ok(response);
