@@ -1,10 +1,10 @@
 ﻿using System;
+using WooliesX.API.Resources;
+
 namespace WooliesX.Core.Resources
 {
-    public class CollectionT
+    public class Collection<T> //: BaseResource
     {
-        public CollectionT()
-        {
-        }
+       public T[] Value { get; set; }
     }
 }

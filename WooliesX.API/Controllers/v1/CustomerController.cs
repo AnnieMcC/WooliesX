@@ -13,9 +13,9 @@ namespace WooliesX.API.Controllers.v1
     [ApiController]
     public class CustomerController : ControllerBase
     {
-        private readonly WooliesXContext _context;
+        private readonly AppDbContext _context;
 
-        public CustomerController(WooliesXContext context)
+        public CustomerController(AppDbContext context)
         {
             _context = context;
         }

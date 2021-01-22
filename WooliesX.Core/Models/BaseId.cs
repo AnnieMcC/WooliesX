@@ -1,10 +1,9 @@
 ﻿using System;
+
 namespace WooliesX.Core.Models
 {
-    public class BaseId
+    public abstract class BaseId<T>
     {
-        public BaseId()
-        {
-        }
+        public virtual T Id { get; set; }
     }
 }

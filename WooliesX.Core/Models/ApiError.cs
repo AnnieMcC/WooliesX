@@ -3,8 +3,7 @@ namespace WooliesX.Core.Models
 {
     public class ApiError
     {
-        public ApiError()
-        {
-        }
+        public string Message { get; set; }
+        public string Detail { get; set; }
     }
 }

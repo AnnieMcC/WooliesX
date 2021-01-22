@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using WooliesX.Core.Models;
+using WooliesX.Core.Resources;
 
-namespace WooliesX.Data.Interfaces
+namespace WooliesX.Core.Interfaces
 {
     public interface IUserService
     {
-        Task<IEnumerable<User>> ListAsync();
+        Task<IEnumerable<UserResource>> GetUsers();
+
+        Task<UserResource> GetUserById(int userId);
     }
 }

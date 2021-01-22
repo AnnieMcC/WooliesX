@@ -1,10 +1,8 @@
 ﻿using System;
 namespace WooliesX.Core.Models
 {
-    public class Customer
+    public class Customer : BaseId<int>
     {
-        public Customer()
-        {
-        }
+      
     }
 }

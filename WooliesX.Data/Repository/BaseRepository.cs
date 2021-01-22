@@ -1,10 +1,16 @@
 ﻿using System;
+using WooliesX.Core.Models;
+
 namespace WooliesX.Data.Repository
 {
-    public class BaseRepository
+    public abstract class BaseRepository
     {
-        public BaseRepository()
+        protected readonly AppDbContext _context;
+
+        public BaseRepository(AppDbContext context)
         {
+            _context = context;
         }
     }
 }
+

@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace WooliesX.Core.Models
 {
-    public class ShopperHistory
+    public class ShopperHistory : BaseId<int>
     {
-        public ShopperHistory()
-        {
-        }
+        public int CustomerId { get; set; }
+
+        public List<Product> Products { get; set; }
     }
 }
