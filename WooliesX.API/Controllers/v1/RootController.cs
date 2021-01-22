@@ -20,7 +20,7 @@ namespace WooliesX.API.Controllers.v1
                 {
                     href = Url.Link(nameof(ProductController.GetAllProducts), null)
                 },
-                shoppingHistory = new
+                shopperHistory = new
                 {
                     href = Url.Link(nameof(ShopperHistoryController.GetAllShopperHistory), null)
                 }
